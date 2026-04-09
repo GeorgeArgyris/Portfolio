@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George Argyris — Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
+
+    <div class="c-dot" id="cDot"></div>
+    <div class="c-ring" id="cRing"></div>
+
+    <div class="nav-wrap">
+        <nav class="pill" id="mainNav">
+            <a class="nav-brand" href="#home">George<span>.</span></a>
+            <ul class="nav-links mt-1 mb-1">
+                <li><a href="#home"><i class="fas fa-house me-1"></i>Home</a></li>
+                <li><a href="#about"><i class="fas fa-user me-1"></i>About</a></li>
+                <li><a href="#projects"><i class="fas fa-layer-group me-1"></i>Projects</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope me-1"></i>Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="nav-socials me-3">
+                    <a href="https://github.com/GeorgeArgyris" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/george-argyris-b79848296" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/giwrgos_argyris/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+                <a href="#contact" class="btn-hire">Hire Me</a>
+            </div>
+            <button class="hamburger" id="menuToggle"><i class="fas fa-bars"></i></button>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-left">
+            <div class="hero-badge d-none">
+                <span class="dot"></span>
+                Available for Opportunities
+            </div>
+
+            <h1 class="hero-title">
+                George<br>
+                <span class="line-highlight">Argyris</span>
+            </h1>
+
+            <p class="hero-sub">
+                Software Engineer specializing in industrial &amp; OT systems, DevOps, and full-stack development.
+                Building robust, scalable applications that bridge the physical and digital worlds.
+            </p>
+
+            <div class="hero-tags">
+                <span class="tag"><i class="fas fa-industry me-1"></i> OT / Industrial Systems</span>
+                <span class="tag"><i class="fas fa-cogs me-1"></i> DevOps</span>
+                <span class="tag"><i class="fas fa-stream me-1"></i> Real-Time Architectures</span>
+                <span class="tag"><i class="fas fa-globe me-1"></i> Full-Stack </span>
+                <span class="tag"><i class="fas fa-microchip me-1"></i> IoT</span>
+                <span class="tag"><i class="fa-brands fa-unity me-1"></i> Digital Twins</span>
+            </div>
+
+            <div class="hero-cta">
+                <a href="CV.pdf" target="_blank" class="btn-primary-hero">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+                <a href="#contact" class="btn-secondary-hero">
+                    <i class="fas fa-paper-plane"></i> Get In Touch
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="photo-frame">
+                <div class="photo-inner">
+                    <img src="profilePic.jpg" alt="George Argyris" class="profile-photo">
+                </div>
+
+                <div class="hero-stat">
+                    <div class="stat-num">2+</div>
+                    <div class="stat-label">Years of Professional Experience</div>
+                </div>
+
+                <div class="hero-stat-2">
+                    <div class="stat-icon"><i class="fas fa-code-branch"></i></div>
+                    <div class="stat-label" style="font-size:.75rem;color:var(--text-muted);">10+ Projects Delivered
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- About Section -->
+    <section id="about" class="reveal">
+        <div class="section-label">Background</div>
+        <h2 class="section-title-lg">About Me</h2>
+
+        <div class="about-grid">
+            <div class="timeline">
+                <div class="tl-item">
+                    <span class="tl-date">September 2025 – Present</span>
+                    <div class="tl-role">Group IT &amp; IoT DevOps</div>
+                    <div class="tl-company">Sabo S.A.</div>
+                    <p class="tl-desc">Build and operate industrial and IoT software systems, extending prior OT
+                        application development into system-level ownership and DevOps practices. Manage deployment,
+                        access, and configuration of modular applications, research and introduce new technologies, and
+                        work directly with clients on integrations, updates, and technical requirements within OT
+                        environments.</p>
+                </div>
+                <div class="tl-item">
+                    <span class="tl-date">July 2023 – August 2025</span>
+                    <div class="tl-role">OT Applications Developer</div>
+                    <div class="tl-company">Sabo S.A.</div>
+                    <p class="tl-desc">Designed, developed, and maintained large-scale web, .NET, and mobile
+                        applications tailored for industrial and operational environments. Focused on building modular,
+                        user-friendly systems ensuring reliability, scalability, and seamless integration with OT
+                        infrastructure.</p>
+                </div>
+                <div class="tl-item">
+                    <span class="tl-date">October 2020 – February 2026</span>
+                    <div class="tl-role">Integrated Master's — Electrical &amp; Computer Engineering</div>
+                    <div class="tl-company">Technical University of Crete</div>
+                    <p class="tl-desc">Strong foundation in Algorithms, Data Structures, System Design, Big Data, AI,
+                        Machine Learning, and 3D Visualization. Academic projects spanning Web Development, 3D
+                        Applications, real-time systems, neural networks, and applied software development.</p>
+                </div>
+            </div>
+
+            <div class="skills-panel reveal">
+                <div class="panel-block">
+                    <div class="panel-heading"><i class="fas fa-user-circle"></i> Professional Profile</div>
+                    <hr>
+                    <div class="kp-grid">
+                        <div class="kp-item">
+                            <div class="kp-icon"><i class="fas fa-industry"></i></div>
+                            <div class="kp-text">
+                                <h4>Industrial &amp; OT Systems</h4>
+                                <p>Design and operation of software systems integrated with industrial and OT
+                                    infrastructure</p>
+                            </div>
+                        </div>
+                        <div class="kp-item">
+                            <div class="kp-icon"><i class="fas fa-stream"></i></div>
+                            <div class="kp-text">
+                                <h4>Real-Time &amp; Event-Driven</h4>
+                                <p>Experience with streaming data, event processing, and real-time system behavior</p>
+                            </div>
+                        </div>
+                        <div class="kp-item">
+                            <div class="kp-icon"><i class="fas fa-cogs"></i></div>
+                            <div class="kp-text">
+                                <h4>DevOps &amp; System Ownership</h4>
+                                <p>Hands-on responsibility for deployment, configuration, monitoring, and system
+                                    evolution</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel-block">
+                    <div class="panel-heading"><i class="fas fa-code"></i> Programming Languages</div>
+                    <hr>
+
+                    <div class="skills-grid">
+                        <span class="skill-chip"><img src="Icons/JavaScript.svg" alt="">JavaScript</span>
+                        <span class="skill-chip"><img src="Icons/Python.svg" alt="">Python</span>
+                        <span class="skill-chip"><img src="Icons/Java.svg" alt="">Java</span>
+                        <span class="skill-chip"><img src="Icons/C(CSharp).svg" alt="">C#</span>
+                        <span class="skill-chip"><img src="Icons/C.svg" alt="">C</span>
+                        <span class="skill-chip"><img src="Icons/PHP.svg" alt="">PHP</span>
+                        <span class="skill-chip"><img src="Icons/Scala.svg" alt="">Scala</span>
+                        <span class="skill-chip"><img src="Icons/HTML5.svg" alt="">HTML</span>
+                        <span class="skill-chip"><img src="Icons/CSS3.svg" alt="">CSS</span>
+                        <span class="skill-chip"><img src="Icons/Azure SQL Database.svg" alt="">SQL / MySQL</span>
+                        <span class="skill-chip"><img src="Icons/Node.js.svg" alt="">Node.js</span>
+                    </div>
+                </div>
+
+                <div class="panel-block">
+                    
+                    <div class="panel-heading"><i class="fas fa-tools"></i> Libraries &amp; Tools</div>
+                    <hr>
+                    <div class="skills-grid">
+                        <span class="skill-chip"><img src="Icons/Docker.svg" alt="">Docker</span>
+                        <span class="skill-chip"><img src="Icons/Linux.svg" alt="">Linux</span>
+                        <span class="skill-chip"><img src="Icons/Apache Kafka.svg" alt=""
+                                style="filter:invert(90%)">Apache Kafka</span>
+                        <span class="skill-chip"><img src="Icons/apacheflinkcolor_50.png" alt="">Apache Flink</span>
+                        <span class="skill-chip"><img src="Icons/Apache Spark.svg" alt="">Apache Spark</span>
+                        <span class="skill-chip"><img src="Icons/googlecloud.svg" alt="">GCP</span>
+                        <span class="skill-chip"><img src="Icons/Unity.svg" alt="">Unity</span>
+                        <span class="skill-chip"><img src="Icons/Bootstrap.svg" alt="">Bootstrap</span>
+                        <span class="skill-chip"><img src="Icons/Tailwind CSS.svg" alt="">Tailwind CSS</span>
+                        <span class="skill-chip"><img src="Icons/Visual Studio Code (VS Code).svg" alt="">VS Code</span>
+                        <span class="skill-chip"><img src="Icons/Visual Studio.svg" alt="">Visual Studio</span>
+                        <span class="skill-chip"><img src="Icons/IntelliJ IDEA.svg" alt="">IntelliJ</span>
+                        <span class="skill-chip"><img src="Icons/PyCharm.svg" alt="">PyCharm</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="reveal">
+        <div class="projects-header">
+            <div>
+                <div class="section-label">Portfolio</div>
+                <h2 class="section-title-lg">Implemented Projects</h2>
+            </div>
+            <div class="layout-btns">
+                <button class="layout-btn" data-cols="1"><i class="fas fa-list"></i> List</button>
+                <button class="layout-btn active" data-cols="2"><i class="fas fa-th-large"></i> Grid</button>
+                <button class="layout-btn" data-cols="3"><i class="fas fa-th"></i> Compact</button>
+            </div>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+            <div class="project-card">
+                <div class="card-img-wrap">
+                    <div id="c10" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img class="card-img" src="DigitalTwin/1.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="DigitalTwin/2.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="DigitalTwin/3.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="DigitalTwin/4.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="DigitalTwin/5.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="DigitalTwin/6.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="DigitalTwin/7.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="DigitalTwin/8.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="DigitalTwin/9.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="DigitalTwin/10.jpg" alt=""></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#c10"
+                            data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#c10"
+                            data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Digital Twin Model based on Neural Complex Event Recognition</div>
+                    <div class="card-desc-wrap collapsed">
+                        <p class="card-desc">This is my diploma thesis project presenting a full-stack real-time monitoring framework built around a 3D digital twin of an electrical infrastructure. 
+                            Sensor data streams from multiple devices via WebSockets and Apache Kafka into an Apache Flink pipeline, 
+                            where a rule-based engine first detects simple events, then feeds them into a trained LSTM neural network — powered by 
+                            TimeGAN-generated synthetic sequences — to recognize complex, multi-layer fault patterns. Higher-level events are escalated and 
+                            resolved entirely within Flink's DataStream API, keeping latency minimal even at scale. The entire processed state is rendered live 
+                            inside a Unity 3D digital twin, giving operators an interactive spatial view of their installation with real-time alerts and drill-down analysis. 
+                            Throughput scales proportionally with Flink parallelism, and a user study confirmed the interface meaningfully supports decision-making in 
+                            large-scale electrical environments.</p>
+                    </div>
+                    <a href="#" class="show-more"><i class="fa-regular fa-eye"></i> Show more <i
+                            class="fas fa-chevron-right" style="font-size:.65rem"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="card-img-wrap">
+                    <div id="c5" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img class="card-img" src="QHSE/1.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="QHSE/2.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="QHSE/3.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="QHSE/4.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="QHSE/5.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="QHSE/6.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="QHSE/7.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="QHSE/8.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="QHSE/9.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="QHSE/10.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="QHSE/11.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="QHSE/12.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="QHSE/13.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="QHSE/14.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="QHSE/15.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="QHSE/16.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="QHSE/17.jpg" alt=""></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#c5"
+                            data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#c5"
+                            data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Quality, Health, Safety &amp; Environment Management System</div>
+                    <div class="card-desc-wrap collapsed">
+                        <p class="card-desc">Enterprise-grade QHSE management system with 25+ modules covering
+                            compliance tracking, incident management, document control, and real-time reporting.
+                            Includes compliance and obligation tracking, incident and non-conformance management,
+                            automated email notifications to responsible roles, state-based workflow tracking,
+                            controlled document management with versioning and digital signatures, and advanced
+                            reporting. Interactive dashboards and configurable data grids provide real-time insights,
+                            audit readiness, and operational transparency across Quality, Health, Safety, and
+                            Environmental processes.</p>
+                    </div>
+                    <a href="#" class="show-more"><i class="fa-regular fa-eye"></i> Show more <i
+                            class="fas fa-chevron-right" style="font-size:.65rem"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="card-img-wrap">
+                    <div id="c7" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img class="card-img" src="CMMS_Updated_2025/1.jpg"
+                                    alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="CMMS_Updated_2025/2.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="CMMS_Updated_2025/3.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="CMMS_Updated_2025/4.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="CMMS_Updated_2025/5.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="CMMS_Updated_2025/6.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="CMMS_Updated_2025/7.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="CMMS_Updated_2025/8.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="CMMS_Updated_2025/9.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="CMMS_Updated_2025/10.jpg" alt="">
+                            </div>
+                            <div class="carousel-item"><img class="card-img" src="CMMS_Updated_2025/11.jpg" alt="">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#c7"
+                            data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#c7"
+                            data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Computerized Maintenance Management System (CMMS) — 2025</div>
+                    <div class="card-desc-wrap collapsed">
+                        <p class="card-desc">Comprehensive CMMS platform designed for enterprise asset management,
+                            maintenance planning, and operational control. Supports preventive and corrective
+                            maintenance workflows, work order and cost tracking, rental equipment management with
+                            digital signatures, and personnel, contract, and technician assignment. Includes custom QR
+                            code generation for asset identification, automated reporting of upcoming and overdue
+                            maintenance, analytics-driven maintenance scheduler, and integrated email notifications to
+                            reduce downtime and improve operational efficiency.</p>
+                    </div>
+                    <a href="#" class="show-more"><i class="fa-regular fa-eye"></i> Show more <i
+                            class="fas fa-chevron-right" style="font-size:.65rem"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="card-img-wrap">
+                    <div id="c1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img class="card-img"
+                                    src="Project_Orilina_Screenshots/Page01.png" alt=""></div>
+                            <div class="carousel-item"><img class="card-img"
+                                    src="Project_Orilina_Screenshots/Page02.png" alt=""></div>
+                            <div class="carousel-item"><img class="card-img"
+                                    src="Project_Orilina_Screenshots/Page03.png" alt=""></div>
+                            <div class="carousel-item"><img class="card-img"
+                                    src="Project_Orilina_Screenshots/Page04.png" alt=""></div>
+                            <div class="carousel-item"><img class="card-img"
+                                    src="Project_Orilina_Screenshots/Page05.png" alt=""></div>
+                            <div class="carousel-item"><img class="card-img"
+                                    src="Project_Orilina_Screenshots/Page06_01.png" alt=""></div>
+                            <div class="carousel-item"><img class="card-img"
+                                    src="Project_Orilina_Screenshots/Page06_02.png" alt=""></div>
+                            <div class="carousel-item"><img class="card-img"
+                                    src="Project_Orilina_Screenshots/Page06_03.png" alt=""></div>
+                            <div class="carousel-item"><img class="card-img"
+                                    src="Project_Orilina_Screenshots/Page07_01.png" alt=""></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#c1"
+                            data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#c1"
+                            data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Real-Time Power Consumption Monitoring &amp; Analysis</div>
+                    <div class="card-desc-wrap collapsed">
+                        <p class="card-desc">Real-time monitoring of industrial power consumption with an analytics
+                            dashboard and alert system for tracking energy usage and identifying optimization
+                            opportunities. Collects data from over 80 devices via Node-RED and visualizes it in a web
+                            application with structured analytics by building, floor, and device. Provides historical
+                            and real-time graphs, rolling averages, and trend analysis including detection of values
+                            exceeding median thresholds over time — enabling anomaly detection, performance comparison,
+                            and data-driven energy optimization.</p>
+                    </div>
+                    <a href="#" class="show-more"><i class="fa-regular fa-eye"></i> Show more <i
+                            class="fas fa-chevron-right" style="font-size:.65rem"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="card-img-wrap">
+                    <div id="c4" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img class="card-img" src="CMMS_2025/1.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="CMMS_2025/2.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="CMMS_2025/3.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="CMMS_2025/4.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="CMMS_2025/5.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="CMMS_2025/6.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="CMMS_2025/7.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="CMMS_2025/8.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="CMMS_2025/9.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="CMMS_2025/10.jpg" alt=""></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#c4"
+                            data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#c4"
+                            data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Computerized Maintenance Management System (CMMS)</div>
+                    <p class="card-desc">Comprehensive asset management and maintenance scheduling system with work
+                        order tracking. Reduces downtime through predictive maintenance scheduling.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="card-img-wrap">
+                    <div id="c8" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img class="card-img" src="HRApp/1.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="HRApp/2.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="HRApp/3.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="HRApp/5.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="HRApp/6.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="HRApp/7.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="HRApp/8.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="HRApp/9.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="HRApp/10.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="HRApp/11.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="HRApp/12.jpg" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="HRApp/13.jpg" alt=""></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#c8"
+                            data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#c8"
+                            data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">HR Self &amp; Manager Evaluation Platform</div>
+                    <p class="card-desc">User-friendly interface for self-evaluation, manager–employee evaluation, goal
+                        tracking with deadlines, total score points, and analytics for the HR Department by employee,
+                        department, and more.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="card-img-wrap">
+                    <div id="c3" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img class="card-img"
+                                    src="Project_Palaplast_Web/Web_Palaplast_Page1.png" alt=""></div>
+                            <div class="carousel-item"><img class="card-img"
+                                    src="Project_Palaplast_Web/Web_Palaplast_Page2_1.png" alt=""></div>
+                            <div class="carousel-item"><img class="card-img"
+                                    src="Project_Palaplast_Web/Web_Palaplast_Page2_3.png" alt=""></div>
+                            <div class="carousel-item"><img class="card-img"
+                                    src="Project_Palaplast_Web/Web_Palaplast_Page2_4.png" alt=""></div>
+                            <div class="carousel-item"><img class="card-img"
+                                    src="Project_Palaplast_Web/Web_Palaplast_Page2_5.png" alt=""></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#c3"
+                            data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#c3"
+                            data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Web Monitoring / Analysis of Recipes with Alerts</div>
+                    <p class="card-desc">Centralized web portal for real-time monitoring of production recipes and
+                        quality parameters. Provides instant alerts for deviations from specified tolerances.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="card-img-wrap">
+                    <div id="c6" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img class="card-img" src="PIRAN_Screens/1.png" alt="">
+                            </div>
+                            <div class="carousel-item"><img class="card-img" src="PIRAN_Screens/2.png" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="PIRAN_Screens/3.png" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="PIRAN_Screens/4.png" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="PIRAN_Screens/5.png" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="PIRAN_Screens/6.png" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="PIRAN_Screens/7.png" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="PIRAN_Screens/8.png" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="PIRAN_Screens/9.png" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="PIRAN_Screens/10.png" alt=""></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#c6"
+                            data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#c6"
+                            data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">PI-RUN — 3D Puzzle-Survival Game</div>
+                    <p class="card-desc">3D puzzle-survival PC game built in Unity featuring three distinct levels with
+                        progressive difficulty, custom scenes, dynamic camera systems with multiple views, inventory
+                        mechanics, and 4+ NPC types with differentiated behaviors. Implements procedural scene elements
+                        for varied gameplay experiences.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="card-img-wrap">
+                    <div id="c2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img class="card-img"
+                                    src="Project_Palaplast_Net/NETApplicationWhole.png" alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="Project_Palaplast_Net/Palaplast_1.png"
+                                    alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="Project_Palaplast_Net/Palaplast_2.png"
+                                    alt=""></div>
+                            <div class="carousel-item"><img class="card-img" src="Project_Palaplast_Net/Palaplast_3.png"
+                                    alt=""></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#c2"
+                            data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#c2"
+                            data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">.NET Application — Industrial Recipe Manager</div>
+                    <p class="card-desc">Industrial recipe management system with version control and approval
+                        workflows. Enables precise control over production parameters and material combinations.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="reveal">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title-lg">Contact Me</h2>
+
+        <div class="contact-grid">
+            <div class="contact-info-side">
+                <h3>Let's Work<br>Together</h3>
+                <p>Looking for a skilled Software Engineer to join your team? I'd be excited to contribute to your
+                    projects. If you have a job opening, want to discuss potential opportunities, or simply want to
+                    connect, I'd be happy to hear from you.</p>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="info-text">
+                        <h5>Email Me</h5>
+                        <p>giwrgosargirisss@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="info-text">
+                        <h5>Location</h5>
+                        <p>Chalkida, Greece</p>
+                    </div>
+                </div>
+
+                <div class="contact-social">
+                    <a href="https://github.com/GeorgeArgyris" target="_blank" class="social-btn"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/giwrgos-argiris-b79848296/" target="_blank"
+                        class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/giwrgos_argyris/" target="_blank" class="social-btn"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="mailto:giwrgosargirisss@gmail.com" class="social-btn"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-form-side">
+                <h3><i class="fas fa-paper-plane me-2" style="color:var(--accent-2)"></i>Send a Message</h3>
+                <form action="https://api.web3forms.com/submit" id="contactForm" method="POST">
+                    <input type="hidden" name="access_key" value="52db338c-881b-4ae4-9800-4bfd2271768b">
+                    <div class="form-group">
+                        <label class="form-label">Your Name</label>
+                        <input type="text" name="name" class="form-input" placeholder="e.g. Jane Smith" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" name="email" class="form-input" placeholder="e.g. jane@company.com"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Message</label>
+                        <textarea name="message" class="form-input" rows="5"
+                            placeholder="Hello George, I'd like to discuss..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-send">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="footer-copy">
+            &copy; <span id="yr"></span> <span>George Argyris</span>. All rights reserved.
+        </p>
+        <a href="#home" class="back-top">
+            <i class="fas fa-arrow-up"></i> Back to top
+        </a>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.getElementById('yr').textContent = new Date().getFullYear();
+
+        const dot = document.getElementById('cDot');
+        const ring = document.getElementById('cRing');
+        document.addEventListener('mousemove', e => {
+            dot.style.left = e.clientX + 'px';
+            dot.style.top = e.clientY + 'px';
+            ring.style.left = e.clientX + 'px';
+            ring.style.top = e.clientY + 'px';
+        });
+        document.querySelectorAll('a, button, .project-card, .skill-chip, .kp-item').forEach(el => {
+            el.addEventListener('mouseenter', () => ring.classList.add('hovered'));
+            el.addEventListener('mouseleave', () => ring.classList.remove('hovered'));
+        });
+
+        const nav = document.getElementById('mainNav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 40);
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                const target = document.querySelector(a.getAttribute('href'));
+                if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+            });
+        });
+
+        const grid = document.getElementById('projectsGrid');
+        document.querySelectorAll('.layout-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.layout-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                grid.className = 'projects-grid';
+                const c = btn.getAttribute('data-cols');
+                if (c !== '2') grid.classList.add('cols-' + c);
+            });
+        });
+
+        document.addEventListener('click', e => {
+            const btn = e.target.closest('.show-more');
+            if (!btn) return;
+            e.preventDefault();
+            const wrap = btn.closest('.card-body').querySelector('.card-desc-wrap');
+            if (!wrap) return;
+            const expanded = wrap.classList.toggle('expanded');
+            wrap.classList.toggle('collapsed', !expanded);
+            btn.innerHTML = expanded
+                ? '<i class="fa-regular fa-eye-slash"></i> Show less <i class="fas fa-chevron-up" style="font-size:.65rem"></i>'
+                : '<i class="fa-regular fa-eye"></i> Show more <i class="fas fa-chevron-right" style="font-size:.65rem"></i>';
+        });
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+    </script>
+</body>
+
+</html>
