@@ -785,6 +785,22 @@
                     #000 92%,
                     transparent 100%);
         }
+
+        .thesis-chip img.icon-invert-dark {
+            filter: none;
+        }
+
+        html.dark .thesis-chip img.icon-invert-dark {
+            filter: invert(100%);
+        }
+
+        .thesis-chip img.icon-invert-light {
+    filter: invert(100%);
+}
+
+html.dark .thesis-chip img.icon-invert-light {
+    filter: invert(0%);
+}
     </style>
 </head>
 
@@ -1025,26 +1041,27 @@
                         </p>
 
                         <div class="flex flex-wrap gap-2 mt-4">
-                            <span class="thesis-chip"><img src="https://cdn.simpleicons.org/unity/767e8a"
-                                    alt="" />Unity</span>
-                            <span class="thesis-chip"><img src="https://cdn.simpleicons.org/python/767e8a"
+                            <span class="thesis-chip"><img src="https://cdn.simpleicons.org/unity" alt=""
+                                    class="icon-invert-light" />Unity</span>
+                            <span class="thesis-chip"><img src="https://cdn.simpleicons.org/python"
                                     alt="" />Python</span>
-                            <span class="thesis-chip"><img src="https://cdn.simpleicons.org/openjdk/767e8a"
-                                    alt="" />Java</span>
-                            <span class="thesis-chip"><img src="https://cdn.simpleicons.org/apachekafka/767e8a"
-                                    alt="" />Kafka</span>
-                            <span class="thesis-chip"><img src="https://cdn.simpleicons.org/apacheflink/767e8a"
+                            <span class="thesis-chip"><img src="https://cdn.simpleicons.org/openjdk" alt=""
+                                    class="icon-invert-dark" />Java</span>
+                            <span class="thesis-chip"><img src="https://cdn.simpleicons.org/apachekafka" alt=""
+                                    class="icon-invert-dark" />Kafka</span>
+                            <span class="thesis-chip"><img src="https://cdn.simpleicons.org/apacheflink"
                                     alt="" />Flink</span>
-                            <span class="thesis-chip"><img src="https://cdn.simpleicons.org/pytorch/767e8a"
+                                    <span class="thesis-chip"><img src="https://cdn.simpleicons.org/docker"
+                                    alt="" />Docker</span>
+                            <span class="thesis-chip"><img src="https://cdn.simpleicons.org/pytorch"
                                     alt="" />PyTorch</span>
-                            <span class="thesis-chip"><img src="https://cdn.simpleicons.org/tensorflow/767e8a"
+                            <span class="thesis-chip"><img src="https://cdn.simpleicons.org/tensorflow"
                                     alt="" />TensorFlow</span>
-                            <span class="thesis-chip"><img src="https://cdn.simpleicons.org/sharp/767e8a"
-                                    alt="" />C#</span>
-                            <span class="thesis-chip">TimeGAN NN<img
-                                    src="https://cdn.simpleicons.org/neutralinojs/767e8a" alt="" /></span>
-                            <span class="thesis-chip">LSTM NN<img src="https://cdn.simpleicons.org/neutralinojs/767e8a"
-                                    alt="" /></span>
+                            <span class="thesis-chip"><img src="https://cdn.simpleicons.org/sharp" alt="" />C#</span>
+                            <span class="thesis-chip"><img src="https://cdn.simpleicons.org/neutralinojs"
+                                    alt="" />TimeGAN NN</span>
+                            <span class="thesis-chip"><img src="https://cdn.simpleicons.org/neutralinojs" alt="" />LSTM
+                                NN</span>
                         </div>
                     </article>
 
@@ -1255,6 +1272,7 @@
             { name: "Node.js", icon: "nodedotjs" },
             { name: "FastAPI", icon: "fastapi" },
             { name: "C", icon: "c" },
+            { name: "Java", icon: "openjdk" },
             { name: "Scala", icon: "scala" },
             { name: "Docker", icon: "docker" },
             { name: "Kubernetes", icon: "kubernetes" },
