@@ -23,13 +23,24 @@
         }
 
         body {
-            background: var(--bg);
-            color: var(--text);
-            font-family: "Inter", sans-serif;
-            transition:
-                background 0.35s ease,
-                color 0.35s ease;
-        }
+    background:
+        radial-gradient(1100px 700px at 12% -10%, color-mix(in srgb, var(--accent) 10%, transparent) 0%, transparent 60%),
+        radial-gradient(900px 600px at 88% 15%, color-mix(in srgb, var(--accent) 7%, transparent) 0%, transparent 55%),
+        radial-gradient(1200px 800px at 50% 100%, color-mix(in srgb, var(--accent) 5%, transparent) 0%, transparent 60%),
+        var(--bg);
+    background-attachment: fixed;
+    color: var(--text);
+    font-family: "Inter", sans-serif;
+    transition: background 0.35s ease, color 0.35s ease;
+}
+
+html.dark body {
+    background:
+        radial-gradient(1100px 700px at 12% -10%, color-mix(in srgb, var(--accent) 16%, transparent) 0%, transparent 60%),
+        radial-gradient(900px 600px at 88% 15%, color-mix(in srgb, var(--accent) 12%, transparent) 0%, transparent 55%),
+        radial-gradient(1200px 800px at 50% 100%, color-mix(in srgb, var(--accent) 8%, transparent) 0%, transparent 60%),
+        var(--bg);
+}
 
         html {
             scroll-behavior: smooth;
@@ -1059,4 +1070,17 @@ section[id] {
     html {
         scroll-behavior: auto;
     }
+}
+
+#bgCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.55;
+}
+
+html.dark #bgCanvas {
+    opacity: 0.4;
 }
