@@ -31,6 +31,10 @@
                 color 0.35s ease;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         .font-display {
             font-family: "Source Serif 4", serif;
         }
@@ -945,6 +949,7 @@ html.dark .thesis-chip img.icon-invert-light {
 
         /* project detail (selected project) layout */
         .project-detail-wrap {
+            scroll-margin-top: 100px;
             display: grid;
             grid-template-columns: 1fr;
             gap: 1.25rem;
@@ -956,6 +961,7 @@ html.dark .thesis-chip img.icon-invert-light {
                 grid-template-columns: 1fr 1.15fr;
                 gap: 1.5rem;
                 align-items: stretch;
+                scroll-margin-top: 100px;
             }
         }
 
@@ -995,44 +1001,62 @@ html.dark .thesis-chip img.icon-invert-light {
     gap: 0.5rem;
 }
 
-/* collapsible project table */
+/* fade under the table isn't needed anymore with real pagination */
 .project-table-body-fade {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 90px;
-    background: linear-gradient(180deg, transparent 0%, var(--bg) 88%);
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.project-table-wrap.is-collapsed .project-table-body-fade {
-    opacity: 1;
-}
-
-.project-show-more {
     display: none;
+}
+
+.project-pagination {
+    display: flex;
+    align-items: center;
     justify-content: center;
+    gap: 0.4rem;
     margin-top: 1.25rem;
 }
 
-.project-show-more-btn {
+.project-page-btn {
     font-family: "IBM Plex Mono", monospace;
-    font-size: 0.68rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    padding: 0.5rem 1.2rem;
+    font-size: 0.7rem;
+    min-width: 2rem;
+    height: 2rem;
+    padding: 0 0.5rem;
     border: 1px solid var(--line);
     border-radius: 999px;
     background: transparent;
     color: var(--muted);
     cursor: pointer;
-    transition: border-color 0.2s ease, color 0.2s ease;
+    transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
 }
 
-.project-show-more-btn:hover {
+.project-page-btn:hover:not(:disabled) {
     border-color: var(--accent);
     color: var(--accent);
+}
+
+.project-page-btn.is-active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--surface);
+}
+
+.project-page-btn:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+
+.project-page-ellipsis {
+    color: var(--muted);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.7rem;
+    padding: 0 0.15rem;
+}
+
+section[id] {
+    scroll-margin-top: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
 }
