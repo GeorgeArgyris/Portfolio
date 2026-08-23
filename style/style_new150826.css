@@ -824,6 +824,7 @@ html.dark .thesis-chip img.icon-invert-light {
 
         /* project table */
         .project-table-wrap {
+            position: relative;
             border: 1px solid var(--line);
             border-radius: 2px;
             overflow: hidden;
@@ -905,6 +906,7 @@ html.dark .thesis-chip img.icon-invert-light {
         .project-row-stack {
             display: flex;
             gap: 0.35rem;
+            flex-wrap: wrap;
         }
 
         .project-row-stack img {
@@ -963,3 +965,74 @@ html.dark .thesis-chip img.icon-invert-light {
             gap: 0.6rem;
             margin-top: 1.5rem;
         }
+
+        /* version chip, sits next to the category/section tag */
+.version-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--muted);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.project-row-category {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+}
+
+.project-info-tags {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* collapsible project table */
+.project-table-body-fade {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 90px;
+    background: linear-gradient(180deg, transparent 0%, var(--bg) 88%);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-table-wrap.is-collapsed .project-table-body-fade {
+    opacity: 1;
+}
+
+.project-show-more {
+    display: none;
+    justify-content: center;
+    margin-top: 1.25rem;
+}
+
+.project-show-more-btn {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.5rem 1.2rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.project-show-more-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
