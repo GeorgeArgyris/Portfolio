@@ -23,24 +23,24 @@
         }
 
         body {
-    background:
-        radial-gradient(1100px 700px at 12% -10%, color-mix(in srgb, var(--accent) 10%, transparent) 0%, transparent 60%),
-        radial-gradient(900px 600px at 88% 15%, color-mix(in srgb, var(--accent) 7%, transparent) 0%, transparent 55%),
-        radial-gradient(1200px 800px at 50% 100%, color-mix(in srgb, var(--accent) 5%, transparent) 0%, transparent 60%),
-        var(--bg);
-    background-attachment: fixed;
-    color: var(--text);
-    font-family: "Inter", sans-serif;
-    transition: background 0.35s ease, color 0.35s ease;
-}
+            background:
+                radial-gradient(1100px 700px at 12% -10%, color-mix(in srgb, var(--accent) 10%, transparent) 0%, transparent 60%),
+                radial-gradient(900px 600px at 88% 15%, color-mix(in srgb, var(--accent) 7%, transparent) 0%, transparent 55%),
+                radial-gradient(1200px 800px at 50% 100%, color-mix(in srgb, var(--accent) 5%, transparent) 0%, transparent 60%),
+                var(--bg);
+            background-attachment: fixed;
+            color: var(--text);
+            font-family: "Inter", sans-serif;
+            transition: background 0.35s ease, color 0.35s ease;
+        }
 
-html.dark body {
-    background:
-        radial-gradient(1100px 700px at 12% -10%, color-mix(in srgb, var(--accent) 16%, transparent) 0%, transparent 60%),
-        radial-gradient(900px 600px at 88% 15%, color-mix(in srgb, var(--accent) 12%, transparent) 0%, transparent 55%),
-        radial-gradient(1200px 800px at 50% 100%, color-mix(in srgb, var(--accent) 8%, transparent) 0%, transparent 60%),
-        var(--bg);
-}
+        html.dark body {
+            background:
+                radial-gradient(1100px 700px at 12% -10%, color-mix(in srgb, var(--accent) 16%, transparent) 0%, transparent 60%),
+                radial-gradient(900px 600px at 88% 15%, color-mix(in srgb, var(--accent) 12%, transparent) 0%, transparent 55%),
+                radial-gradient(1200px 800px at 50% 100%, color-mix(in srgb, var(--accent) 8%, transparent) 0%, transparent 60%),
+                var(--bg);
+        }
 
         html {
             scroll-behavior: smooth;
@@ -796,12 +796,12 @@ html.dark body {
         }
 
         .thesis-chip img.icon-invert-light {
-    filter: invert(100%);
-}
+            filter: invert(100%);
+        }
 
-html.dark .thesis-chip img.icon-invert-light {
-    filter: invert(0%);
-}
+        html.dark .thesis-chip img.icon-invert-light {
+            filter: invert(0%);
+        }
 
         /* project controls (filter tabs) */
         .project-controls {
@@ -936,7 +936,10 @@ html.dark .thesis-chip img.icon-invert-light {
                 display: none;
             }
 
-            .project-table, .project-table tbody, .project-table tr, .project-table td {
+            .project-table,
+            .project-table tbody,
+            .project-table tr,
+            .project-table td {
                 display: block;
                 width: 100%;
             }
@@ -984,103 +987,290 @@ html.dark .thesis-chip img.icon-invert-light {
         }
 
         /* version chip, sits next to the category/section tag */
-.version-tag {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.25rem 0.6rem;
-    border-radius: 999px;
-    background: transparent;
-    border: 1px solid var(--line);
-    color: var(--muted);
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.6rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    font-weight: 600;
+        .version-tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.25rem 0.6rem;
+            border-radius: 999px;
+            background: transparent;
+            border: 1px solid var(--line);
+            color: var(--muted);
+            font-family: "IBM Plex Mono", monospace;
+            font-size: 0.6rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .project-row-category {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+        }
+
+        .project-info-tags {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* fade under the table isn't needed anymore with real pagination */
+        .project-table-body-fade {
+            display: none;
+        }
+
+        .project-pagination {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+            margin-top: 1.25rem;
+        }
+
+        .project-page-btn {
+            font-family: "IBM Plex Mono", monospace;
+            font-size: 0.7rem;
+            min-width: 2rem;
+            height: 2rem;
+            padding: 0 0.5rem;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            background: transparent;
+            color: var(--muted);
+            cursor: pointer;
+            transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+        }
+
+        .project-page-btn:hover:not(:disabled) {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .project-page-btn.is-active {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: var(--surface);
+        }
+
+        .project-page-btn:disabled {
+            opacity: 0.35;
+            cursor: default;
+        }
+
+        .project-page-ellipsis {
+            color: var(--muted);
+            font-family: "IBM Plex Mono", monospace;
+            font-size: 0.7rem;
+            padding: 0 0.15rem;
+        }
+
+        section[id] {
+            scroll-margin-top: 2px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+        }
+
+        #bgCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            pointer-events: none;
+            opacity: 0.55;
+        }
+
+        html.dark #bgCanvas {
+            opacity: 0.4;
+        }
+
+        /* contact section */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
 }
 
-.project-row-category {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    flex-wrap: wrap;
-}
-
-.project-info-tags {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-/* fade under the table isn't needed anymore with real pagination */
-.project-table-body-fade {
-    display: none;
-}
-
-.project-pagination {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.4rem;
-    margin-top: 1.25rem;
-}
-
-.project-page-btn {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.7rem;
-    min-width: 2rem;
-    height: 2rem;
-    padding: 0 0.5rem;
-    border: 1px solid var(--line);
-    border-radius: 999px;
-    background: transparent;
-    color: var(--muted);
-    cursor: pointer;
-    transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
-}
-
-.project-page-btn:hover:not(:disabled) {
-    border-color: var(--accent);
-    color: var(--accent);
-}
-
-.project-page-btn.is-active {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: var(--surface);
-}
-
-.project-page-btn:disabled {
-    opacity: 0.35;
-    cursor: default;
-}
-
-.project-page-ellipsis {
-    color: var(--muted);
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.7rem;
-    padding: 0 0.15rem;
-}
-
-section[id] {
-    scroll-margin-top: 2px;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
+@media (min-width: 1024px) {
+    .contact-grid {
+        grid-template-columns: 0.9fr 1.2fr;
+        gap: 3rem;
+        align-items: start;
     }
 }
 
-#bgCanvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    pointer-events: none;
-    opacity: 0.55;
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
 }
 
-html.dark #bgCanvas {
-    opacity: 0.4;
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 0.75rem 0.25rem;
+    border-bottom: 1px solid var(--line);
+    color: var(--text);
+    text-decoration: none;
+    transition: padding-left 0.25s ease, border-color 0.25s ease;
+}
+
+.contact-link:last-child {
+    border-bottom: none;
+}
+
+.contact-link:hover {
+    padding-left: 0.6rem;
+    border-color: color-mix(in srgb, var(--accent) 40%, var(--line));
+}
+
+.contact-link-icon {
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--line);
+    color: var(--accent);
+    background: var(--accent-soft);
+    border-radius: 2px;
+    transition: transform 0.25s ease;
+}
+
+.contact-link:hover .contact-link-icon {
+    transform: rotate(-6deg);
+}
+
+.contact-link-label {
+    display: block;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.62rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+}
+
+.contact-link-value {
+    display: block;
+    font-family: "Source Serif 4", serif;
+    font-size: 0.95rem;
+    margin-top: 0.1rem;
+}
+
+/* form panel — same blueprint corner language as the thesis showcase */
+.contact-form-panel {
+    position: relative;
+    background: color-mix(in srgb, var(--surface) 88%, transparent);
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--accent);
+    border-radius: 2px;
+    padding: 1.75rem 1.75rem 1.5rem;
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.55s ease, transform 0.55s ease, border-color 0.3s ease;
+}
+
+.contact-form-panel.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contact-form-panel:hover {
+    border-color: color-mix(in srgb, var(--accent) 40%, var(--line));
+    border-top-color: var(--accent);
+}
+
+.contact-form-panel .corner {
+    width: 16px;
+    height: 16px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    margin-top: 1.25rem;
+}
+
+.contact-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.contact-label {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.62rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+}
+
+.contact-input {
+    width: 100%;
+    background: color-mix(in srgb, var(--bg) 65%, transparent);
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    padding: 0.65rem 0.8rem;
+    font-family: "Inter", sans-serif;
+    font-size: 0.88rem;
+    color: var(--text);
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.contact-input:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: color-mix(in srgb, var(--surface) 92%, transparent);
+}
+
+.contact-input::placeholder {
+    color: var(--muted);
+    opacity: 0.75;
+}
+
+.contact-submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    padding: 0.7rem 1.4rem;
+    border-radius: 2px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 0.85rem;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.contact-submit:hover:not(:disabled) {
+    transform: translateY(-1px);
+}
+
+.contact-submit:disabled {
+    opacity: 0.6;
+    cursor: default;
+    transform: none;
+}
+
+.contact-status {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.72rem;
+    margin-top: -0.3rem;
+}
+
+.contact-status.status-ok {
+    color: var(--accent);
+}
+
+.contact-status.status-error {
+    color: #c8564f;
 }
