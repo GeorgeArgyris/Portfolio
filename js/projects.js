@@ -211,6 +211,28 @@ const projectsData = [
             'assets/projects/professional/DKE_AuditTool_ScreenShots/3.jpg',
         ],
     },
+    {
+        id: 'pi-run',
+        title: 'PI-RUN Desktop 3D Game',
+        short_title: 'PI-RUN Desktop 3D Game',
+        version: 'V1.0.1',
+        category: 'Personal',
+        shortDesc: 'Fun little side project - 3D Game created with Unity with 4+ different scenes 3+ different NPC characters ',
+        fullDesc: 'Fun little side project - 3D Game created with Unity with 4+ different scenes 3+ different NPC characters, procedural scene generation, object detection & overlap, animations etc.',
+        github: '-',
+        github: '-',
+        stack: [
+            { icon: 'unity', name: 'Unity' },
+            { icon: 'sharp', name: 'C#' },
+            { icon: 'taichigraphics', name: 'Graphics' },
+        ],
+        images: [
+            'assets/projects/personal/PIRAN_Screens/3.png',
+            'assets/projects/personal/PIRAN_Screens/5.png',
+            'assets/projects/personal/PIRAN_Screens/7.png',
+            'assets/projects/personal/PIRAN_Screens/9.png',
+        ],
+    },
 
 
 ];
