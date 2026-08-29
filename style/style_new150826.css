@@ -1089,188 +1089,312 @@
         }
 
         /* contact section */
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-}
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+        }
 
-@media (min-width: 1024px) {
-    .contact-grid {
-        grid-template-columns: 0.9fr 1.2fr;
-        gap: 3rem;
-        align-items: start;
-    }
-}
+        @media (min-width: 1024px) {
+            .contact-grid {
+                grid-template-columns: 0.9fr 1.2fr;
+                gap: 3rem;
+                align-items: start;
+            }
+        }
 
-.contact-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.35rem;
-}
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
 
-.contact-link {
-    display: flex;
-    align-items: center;
-    gap: 0.85rem;
-    padding: 0.75rem 0.25rem;
-    border-bottom: 1px solid var(--line);
-    color: var(--text);
-    text-decoration: none;
-    transition: padding-left 0.25s ease, border-color 0.25s ease;
-}
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+            padding: 0.75rem 0.25rem;
+            border-bottom: 1px solid var(--line);
+            color: var(--text);
+            text-decoration: none;
+            transition: padding-left 0.25s ease, border-color 0.25s ease;
+        }
 
-.contact-link:last-child {
-    border-bottom: none;
-}
+        .contact-link:last-child {
+            border-bottom: none;
+        }
 
-.contact-link:hover {
-    padding-left: 0.6rem;
-    border-color: color-mix(in srgb, var(--accent) 40%, var(--line));
-}
+        .contact-link:hover {
+            padding-left: 0.6rem;
+            border-color: color-mix(in srgb, var(--accent) 40%, var(--line));
+        }
 
-.contact-link-icon {
-    flex-shrink: 0;
-    width: 2rem;
-    height: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid var(--line);
-    color: var(--accent);
-    background: var(--accent-soft);
-    border-radius: 2px;
-    transition: transform 0.25s ease;
-}
+        .contact-link-icon {
+            flex-shrink: 0;
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--line);
+            color: var(--accent);
+            background: var(--accent-soft);
+            border-radius: 2px;
+            transition: transform 0.25s ease;
+        }
 
-.contact-link:hover .contact-link-icon {
-    transform: rotate(-6deg);
-}
+        .contact-link:hover .contact-link-icon {
+            transform: rotate(-6deg);
+        }
 
-.contact-link-label {
-    display: block;
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.62rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--muted);
-}
+        .contact-link-label {
+            display: block;
+            font-family: "IBM Plex Mono", monospace;
+            font-size: 0.62rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--muted);
+        }
 
-.contact-link-value {
-    display: block;
-    font-family: "Source Serif 4", serif;
-    font-size: 0.95rem;
-    margin-top: 0.1rem;
-}
+        .contact-link-value {
+            display: block;
+            font-family: "Source Serif 4", serif;
+            font-size: 0.95rem;
+            margin-top: 0.1rem;
+        }
 
-/* form panel — same blueprint corner language as the thesis showcase */
-.contact-form-panel {
-    position: relative;
-    background: color-mix(in srgb, var(--surface) 88%, transparent);
-    border: 1px solid var(--line);
-    border-top: 3px solid var(--accent);
-    border-radius: 2px;
-    padding: 1.75rem 1.75rem 1.5rem;
-    opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 0.55s ease, transform 0.55s ease, border-color 0.3s ease;
-}
+        /* form panel — same blueprint corner language as the thesis showcase */
+        .contact-form-panel {
+            position: relative;
+            background: color-mix(in srgb, var(--surface) 88%, transparent);
+            border: 1px solid var(--line);
+            border-top: 3px solid var(--accent);
+            border-radius: 2px;
+            padding: 1.75rem 1.75rem 1.5rem;
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.55s ease, transform 0.55s ease, border-color 0.3s ease;
+        }
 
-.contact-form-panel.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-}
+        .contact-form-panel.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
-.contact-form-panel:hover {
-    border-color: color-mix(in srgb, var(--accent) 40%, var(--line));
-    border-top-color: var(--accent);
-}
+        .contact-form-panel:hover {
+            border-color: color-mix(in srgb, var(--accent) 40%, var(--line));
+            border-top-color: var(--accent);
+        }
 
-.contact-form-panel .corner {
-    width: 16px;
-    height: 16px;
-}
+        .contact-form-panel .corner {
+            width: 16px;
+            height: 16px;
+        }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.1rem;
-    margin-top: 1.25rem;
-}
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.1rem;
+            margin-top: 1.25rem;
+        }
 
-.contact-field {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-}
+        .contact-field {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
 
-.contact-label {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.62rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--muted);
-}
+        .contact-label {
+            font-family: "IBM Plex Mono", monospace;
+            font-size: 0.62rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--muted);
+        }
 
-.contact-input {
-    width: 100%;
-    background: color-mix(in srgb, var(--bg) 65%, transparent);
-    border: 1px solid var(--line);
-    border-radius: 2px;
-    padding: 0.65rem 0.8rem;
-    font-family: "Inter", sans-serif;
-    font-size: 0.88rem;
-    color: var(--text);
-    transition: border-color 0.2s ease, background 0.2s ease;
-}
+        .contact-input {
+            width: 100%;
+            background: color-mix(in srgb, var(--bg) 65%, transparent);
+            border: 1px solid var(--line);
+            border-radius: 2px;
+            padding: 0.65rem 0.8rem;
+            font-family: "Inter", sans-serif;
+            font-size: 0.88rem;
+            color: var(--text);
+            transition: border-color 0.2s ease, background 0.2s ease;
+        }
 
-.contact-input:focus {
-    outline: none;
-    border-color: var(--accent);
-    background: color-mix(in srgb, var(--surface) 92%, transparent);
-}
+        .contact-input:focus {
+            outline: none;
+            border-color: var(--accent);
+            background: color-mix(in srgb, var(--surface) 92%, transparent);
+        }
 
-.contact-input::placeholder {
-    color: var(--muted);
-    opacity: 0.75;
-}
+        .contact-input::placeholder {
+            color: var(--muted);
+            opacity: 0.75;
+        }
 
-.contact-submit {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.55rem;
-    padding: 0.7rem 1.4rem;
-    border-radius: 2px;
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-    font-size: 0.85rem;
-    border: none;
-    cursor: pointer;
-    align-self: flex-start;
-    transition: filter 0.2s ease, transform 0.2s ease;
-}
+        .contact-submit {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.55rem;
+            padding: 0.7rem 1.4rem;
+            border-radius: 2px;
+            font-family: "Inter", sans-serif;
+            font-weight: 500;
+            font-size: 0.85rem;
+            border: none;
+            cursor: pointer;
+            align-self: flex-start;
+            transition: filter 0.2s ease, transform 0.2s ease;
+        }
 
-.contact-submit:hover:not(:disabled) {
-    transform: translateY(-1px);
-}
+        .contact-submit:hover:not(:disabled) {
+            transform: translateY(-1px);
+        }
 
-.contact-submit:disabled {
-    opacity: 0.6;
-    cursor: default;
-    transform: none;
-}
+        .contact-submit:disabled {
+            opacity: 0.6;
+            cursor: default;
+            transform: none;
+        }
 
-.contact-status {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.72rem;
-    margin-top: -0.3rem;
-}
+        .contact-status {
+            font-family: "IBM Plex Mono", monospace;
+            font-size: 0.72rem;
+            margin-top: -0.3rem;
+        }
 
-.contact-status.status-ok {
-    color: var(--accent);
-}
+        .contact-status.status-ok {
+            color: var(--accent);
+        }
 
-.contact-status.status-error {
-    color: #c8564f;
-}
+        .contact-status.status-error {
+            color: #c8564f;
+        }
+
+        @media (max-width: 640px) {
+
+            h1,
+            #typedName {
+                font-size: 2.1rem;
+            }
+
+            #about h2,
+            #work h2,
+            #contact h2 {
+                font-size: 1.6rem;
+                margin-bottom: 2rem;
+            }
+
+            .project-controls {
+                gap: 0.4rem;
+                margin: 1.5rem 0 1rem;
+            }
+
+            .project-filter-btn {
+                font-size: 0.62rem;
+                padding: 0.3rem 0.7rem;
+            }
+
+            .project-table tbody tr {
+                padding: 0.7rem 0.9rem;
+            }
+
+            .project-row-name {
+                font-size: 0.85rem;
+            }
+
+            .project-row-desc {
+                font-size: 0.78rem;
+                line-height: 1.45;
+            }
+
+            .project-row-stack img {
+                width: 13px;
+                height: 13px;
+            }
+
+            .section-tag {
+                font-size: 0.56rem;
+                padding: 0.2rem 0.5rem;
+            }
+
+            .version-tag {
+                font-size: 0.55rem;
+                padding: 0.2rem 0.5rem;
+            }
+
+            .thesis-chip {
+                font-size: 0.6rem;
+                padding: 0.3rem 0.5rem;
+            }
+
+            .showcase-title {
+                font-size: 0.92rem;
+            }
+
+            .about-card,
+            .thesis-showcase,
+            .contact-form-panel,
+            .timeline-card {
+                padding: 1rem 1.1rem;
+            }
+
+            .project-page-btn {
+                min-width: 1.75rem;
+                height: 1.75rem;
+                font-size: 0.65rem;
+            }
+        }
+
+        .site-footer {
+            background: color-mix(in srgb, var(--bg) 90%, transparent);
+        }
+
+        .back-to-top-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            background: transparent;
+            color: var(--muted);
+            font-family: "IBM Plex Mono", monospace;
+            font-size: 0.68rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+        }
+
+        .back-to-top-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .back-to-top-btn svg {
+            transition: transform 0.2s ease;
+        }
+
+        .back-to-top-btn:hover svg {
+            transform: translateY(-2px);
+        }
+
+        #projectTableBody {
+            transition: opacity 0.2s ease;
+        }
+
+        #projectTableBody.is-fading {
+            opacity: 0;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            #projectTableBody {
+                transition: none;
+            }
+        }

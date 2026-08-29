@@ -422,7 +422,7 @@
                 </thead>
                 <tbody id="projectTableBody"></tbody>
             </table>
-        
+
         </div>
         <div class="project-pagination" id="projectPagination"></div>
 
@@ -453,115 +453,142 @@
     </section>
 
     <section id="contact" class="max-w-6xl mx-auto px-6 md:px-10 py-24 md:py-32 border-t hairline">
-    <p class="eyebrow font-mono text-xs uppercase text-muted mb-3">
-        <span class="sec-mark">§03</span>Contact
-    </p>
-    <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight mb-16 md:mb-20">
-        Get in Touch
-    </h2>
+        <p class="eyebrow font-mono text-xs uppercase text-muted mb-3">
+            <span class="sec-mark">§03</span>Contact
+        </p>
+        <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight mb-16 md:mb-20">
+            Get in Touch
+        </h2>
 
-    <div class="contact-grid">
-        <!-- LEFT: intro + direct channels -->
-        <div class="contact-intro" data-reveal>
-            <p class="text-muted leading-relaxed font-display text-lg">
-                Open to new opportunities, collaborations, or a technical
-                conversation. Send a message directly, or reach out through
-                any of the channels below.
+        <div class="contact-grid">
+            <!-- LEFT: intro + direct channels -->
+            <div class="contact-intro" data-reveal>
+                <p class="text-muted leading-relaxed font-display text-lg">
+                    Open to new opportunities, collaborations, or a technical
+                    conversation. Send a message directly, or reach out through
+                    any of the channels below.
+                </p>
+
+                <div class="contact-links mt-10">
+                    <a href="mailto:giwrgosargirisss@gmail.com" class="contact-link">
+                        <span class="contact-link-icon">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                                <path d="m22 6-10 7L2 6" />
+                            </svg>
+                        </span>
+                        <span>
+                            <span class="contact-link-label">Email</span>
+                            <span class="contact-link-value">giwrgosargirisss@gmail.com</span>
+                        </span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/george-argyris-b79848296" target="_blank" rel="noopener"
+                        class="contact-link">
+                        <span class="contact-link-icon">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20.45 20.45h-3.56v-5.58c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.68H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45z" />
+                            </svg>
+                        </span>
+                        <span>
+                            <span class="contact-link-label">LinkedIn</span>
+                            <span class="contact-link-value">george-argyris</span>
+                        </span>
+                    </a>
+                    <a href="https://github.com/GeorgeArgyris" target="_blank" rel="noopener" class="contact-link">
+                        <span class="contact-link-icon">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1-.02-1.96-3.2.7-3.87-1.54-3.87-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.07.78 2.15 0 1.55-.01 2.8-.01 3.18 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z" />
+                            </svg>
+                        </span>
+                        <span>
+                            <span class="contact-link-label">GitHub</span>
+                            <span class="contact-link-value">GeorgeArgyris</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="mt-10 flex items-center gap-2 font-mono text-xs text-muted">
+                    <span class="status-dot"></span>
+                    Based in Greece, Chalkida
+                </div>
+            </div>
+
+            <!-- RIGHT: form, blueprint corner-bracket treatment -->
+            <div class="contact-form-panel" data-reveal>
+                <div class="corner corner-tl"></div>
+                <div class="corner corner-br"></div>
+
+                <span class="section-tag">Send a message</span>
+
+                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <input type="hidden" name="access_key" value="52db338c-881b-4ae4-9800-4bfd2271768b">
+                    <input type="hidden" name="subject" value="New message from portfolio site">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+
+                    <div class="contact-field">
+                        <label class="contact-label">Your Name</label>
+                        <input type="text" name="name" required placeholder="e.g. Jane Smith" class="contact-input">
+                    </div>
+
+                    <div class="contact-field">
+                        <label class="contact-label">Email Address</label>
+                        <input type="email" name="email" required placeholder="e.g. jane@company.com"
+                            class="contact-input">
+                    </div>
+
+                    <div class="contact-field">
+                        <label class="contact-label">Message</label>
+                        <textarea name="message" rows="5" required placeholder="Hello George, I'd like to discuss..."
+                            class="contact-input resize-none"></textarea>
+                    </div>
+
+                    <button type="submit" id="contactSubmitBtn" class="btn-primary contact-submit">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m22 2-7 20-4-9-9-4Z" />
+                            <path d="M22 2 11 13" />
+                        </svg>
+                        <span id="contactSubmitLabel">Send Message</span>
+                    </button>
+
+                    <p id="contactFormStatus" class="contact-status hidden"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer border-t hairline">
+        <div
+            class="max-w-6xl mx-auto px-6 md:px-10 py-10 flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-4 text-center sm:text-left">
+            <p class="font-mono text-xs text-muted" style="margin-top: 10px;">
+                © <span id="footerYear"></span> George Argyris. All rights reserved.
             </p>
 
-            <div class="contact-links mt-10">
-                <a href="mailto:giwrgosargirisss@gmail.com" class="contact-link">
-                    <span class="contact-link-icon">
-                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="4" width="20" height="16" rx="2" />
-                            <path d="m22 6-10 7L2 6" />
-                        </svg>
-                    </span>
-                    <span>
-                        <span class="contact-link-label">Email</span>
-                        <span class="contact-link-value">giwrgosargirisss@gmail.com</span>
-                    </span>
-                </a>
-                <a href="https://www.linkedin.com/in/george-argyris-b79848296" target="_blank" rel="noopener"
-                    class="contact-link">
-                    <span class="contact-link-icon">
-                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20.45 20.45h-3.56v-5.58c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.68H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45z" />
-                        </svg>
-                    </span>
-                    <span>
-                        <span class="contact-link-label">LinkedIn</span>
-                        <span class="contact-link-value">george-argyris</span>
-                    </span>
-                </a>
-                <a href="https://github.com/GeorgeArgyris" target="_blank" rel="noopener" class="contact-link">
-                    <span class="contact-link-icon">
-                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1-.02-1.96-3.2.7-3.87-1.54-3.87-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.07.78 2.15 0 1.55-.01 2.8-.01 3.18 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z" />
-                        </svg>
-                    </span>
-                    <span>
-                        <span class="contact-link-label">GitHub</span>
-                        <span class="contact-link-value">GeorgeArgyris</span>
-                    </span>
-                </a>
-            </div>
-
-            <div class="mt-10 flex items-center gap-2 font-mono text-xs text-muted">
-                <span class="status-dot"></span>
-                Based in Greece, Chalkida
-            </div>
+            <button id="backToTop" aria-label="Back to top" class="back-to-top-btn" style="margin-bottom: 10px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 19V5" />
+                    <path d="m5 12 7-7 7 7" />
+                </svg>
+                <span>Back to top</span>
+            </button>
         </div>
-
-        <!-- RIGHT: form, blueprint corner-bracket treatment -->
-        <div class="contact-form-panel" data-reveal>
-            <div class="corner corner-tl"></div>
-            <div class="corner corner-br"></div>
-
-            <span class="section-tag">Send a message</span>
-
-            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST"
-                class="contact-form">
-                <input type="hidden" name="access_key" value="52db338c-881b-4ae4-9800-4bfd2271768b">
-                <input type="hidden" name="subject" value="New message from portfolio site">
-                <input type="checkbox" name="botcheck" class="hidden" style="display:none">
-
-                <div class="contact-field">
-                    <label class="contact-label">Your Name</label>
-                    <input type="text" name="name" required placeholder="e.g. Jane Smith" class="contact-input">
-                </div>
-
-                <div class="contact-field">
-                    <label class="contact-label">Email Address</label>
-                    <input type="email" name="email" required placeholder="e.g. jane@company.com"
-                        class="contact-input">
-                </div>
-
-                <div class="contact-field">
-                    <label class="contact-label">Message</label>
-                    <textarea name="message" rows="5" required
-                        placeholder="Hello George, I'd like to discuss..." class="contact-input resize-none"></textarea>
-                </div>
-
-                <button type="submit" id="contactSubmitBtn" class="btn-primary contact-submit">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="m22 2-7 20-4-9-9-4Z" />
-                        <path d="M22 2 11 13" />
-                    </svg>
-                    <span id="contactSubmitLabel">Send Message</span>
-                </button>
-
-                <p id="contactFormStatus" class="contact-status hidden"></p>
-            </form>
-        </div>
-    </div>
-</section>
+    </footer>
 
     <script src="js/stack.js"></script>
     <script src="js/projects.js"></script>
     <!-- <script src="js/background.js"></script> -->
+    <script>
+        document.getElementById("footerYear").textContent = new Date().getFullYear();
+
+        document.getElementById("backToTop").addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+
 
     <script>
         const root = document.documentElement;
@@ -641,7 +668,7 @@
         }
 
         // tech stack — flowing chip rows
-        
+
 
         function chipHTML(item) {
             const invert = ["githubactions", "dotnet", "apachekafka"].includes(item.icon)
@@ -702,7 +729,7 @@
         const galleryPositions = ['gallery-tile-tl', 'gallery-tile-tr', 'gallery-tile-bl', 'gallery-tile-br'];
         const PROJECT_PAGE_SIZE = 4;
         let currentPage = 1;
-        
+
 
         function renderProjectDetail(project) {
             document.getElementById('projectInfoCategory').textContent = project.category;
@@ -749,15 +776,15 @@
         }
 
         function renderProjectTable() {
-    const tbody = document.getElementById('projectTableBody');
-    const filtered = projectsData.filter((p) => currentFilter === 'All' || p.category === currentFilter);
-    const totalPages = Math.max(1, Math.ceil(filtered.length / PROJECT_PAGE_SIZE));
-    currentPage = Math.min(currentPage, totalPages);
+            const tbody = document.getElementById('projectTableBody');
+            const filtered = projectsData.filter((p) => currentFilter === 'All' || p.category === currentFilter);
+            const totalPages = Math.max(1, Math.ceil(filtered.length / PROJECT_PAGE_SIZE));
+            currentPage = Math.min(currentPage, totalPages);
 
-    const start = (currentPage - 1) * PROJECT_PAGE_SIZE;
-    const visible = filtered.slice(start, start + PROJECT_PAGE_SIZE);
+            const start = (currentPage - 1) * PROJECT_PAGE_SIZE;
+            const visible = filtered.slice(start, start + PROJECT_PAGE_SIZE);
 
-    tbody.innerHTML = visible.map((p) => `
+            tbody.innerHTML = visible.map((p) => `
         <tr data-id="${p.id}" tabindex="0">
             <td>
                 <div class="project-row-name">
@@ -778,77 +805,68 @@
             </td>
         </tr>`).join('');
 
-    tbody.querySelectorAll('tr').forEach((row) => {
-        row.addEventListener('click', () => {
-            selectProject(row.dataset.id);
-            scrollToProjectDetail();
-        });
-        row.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                selectProject(row.dataset.id);
-                scrollToProjectDetail();
+            tbody.querySelectorAll('tr').forEach((row) => {
+                row.addEventListener('click', () => {
+                    selectProject(row.dataset.id);
+                    scrollToProjectDetail();
+                });
+                row.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        selectProject(row.dataset.id);
+                        scrollToProjectDetail();
+                    }
+                });
+            });
+
+            renderPagination(totalPages);
+
+            if (!filtered.some((p) => p.id === selectedProjectId)) {
+                if (filtered.length) selectProject(filtered[0].id);
+            } else {
+                selectProject(selectedProjectId);
             }
-        });
-    });
-
-    renderPagination(totalPages);
-
-    if (!filtered.some((p) => p.id === selectedProjectId)) {
-        if (filtered.length) selectProject(filtered[0].id);
-    } else {
-        selectProject(selectedProjectId);
-    }
-}
-
-function renderPagination(totalPages) {
-    const el = document.getElementById('projectPagination');
-    if (!el) return;
-
-    if (totalPages <= 1) {
-        el.innerHTML = '';
-        return;
-    }
-
-    let html = `<button class="project-page-btn" data-page="prev" ${currentPage === 1 ? 'disabled' : ''}>‹</button>`;
-
-    for (let i = 1; i <= totalPages; i++) {
-        const nearEdge = i === 1 || i === totalPages || Math.abs(i - currentPage) <= 1;
-        if (nearEdge) {
-            html += `<button class="project-page-btn ${i === currentPage ? 'is-active' : ''}" data-page="${i}">${i}</button>`;
-        } else if (Math.abs(i - currentPage) === 2) {
-            html += `<span class="project-page-ellipsis">…</span>`;
         }
-    }
 
-    html += `<button class="project-page-btn" data-page="next" ${currentPage === totalPages ? 'disabled' : ''}>›</button>`;
-    el.innerHTML = html;
+        function renderPagination(totalPages) {
+            const el = document.getElementById('projectPagination');
+            if (!el) return;
 
-    el.querySelectorAll('.project-page-btn').forEach((btn) => {
-        btn.addEventListener('click', () => {
-            const p = btn.dataset.page;
-            if (p === 'prev') currentPage -= 1;
-            else if (p === 'next') currentPage += 1;
-            else currentPage = parseInt(p, 10);
-            renderProjectTable();
-        });
-    });
-}
+            if (totalPages <= 1) {
+                el.innerHTML = '';
+                return;
+            }
 
-function scrollToProjectDetail() {
-    document.querySelector('.project-detail-wrap')?.scrollIntoView({ behavior: 'smooth', block: 'start' ,inline: 'nearest'});
-}
+            let html = `<button class="project-page-btn" data-page="prev" ${currentPage === 1 ? 'disabled' : ''}>‹</button>`;
 
-        function initProjectFilters() {
-            document.querySelectorAll('.project-filter-btn').forEach((btn) => {
+            for (let i = 1; i <= totalPages; i++) {
+                const nearEdge = i === 1 || i === totalPages || Math.abs(i - currentPage) <= 1;
+                if (nearEdge) {
+                    html += `<button class="project-page-btn ${i === currentPage ? 'is-active' : ''}" data-page="${i}">${i}</button>`;
+                } else if (Math.abs(i - currentPage) === 2) {
+                    html += `<span class="project-page-ellipsis">…</span>`;
+                }
+            }
+
+            html += `<button class="project-page-btn" data-page="next" ${currentPage === totalPages ? 'disabled' : ''}>›</button>`;
+            el.innerHTML = html;
+
+            el.querySelectorAll('.project-page-btn').forEach((btn) => {
                 btn.addEventListener('click', () => {
-                    currentFilter = btn.dataset.filter;
-                    showAllProjects = false;
-                    document.querySelectorAll('.project-filter-btn').forEach((b) => b.classList.toggle('is-active', b === btn));
-                    renderProjectTable();
+                    const p = btn.dataset.page;
+                    if (p === 'prev') currentPage -= 1;
+                    else if (p === 'next') currentPage += 1;
+                    else currentPage = parseInt(p, 10);
+                    fadeSwapTable(renderProjectTable);
                 });
             });
         }
+
+        function scrollToProjectDetail() {
+            document.querySelector('.project-detail-wrap')?.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+        }
+
+
 
         function initProjectShowMore() {
             const btn = document.getElementById('projectShowMoreBtn');
@@ -860,61 +878,70 @@ function scrollToProjectDetail() {
         }
 
         function initProjectFilters() {
-    document.querySelectorAll('.project-filter-btn').forEach((btn) => {
-        btn.addEventListener('click', () => {
-            currentFilter = btn.dataset.filter;
-            currentPage = 1;
-            document.querySelectorAll('.project-filter-btn').forEach((b) => b.classList.toggle('is-active', b === btn));
-            renderProjectTable();
-        });
-    });
-}
+            document.querySelectorAll('.project-filter-btn').forEach((btn) => {
+                btn.addEventListener('click', () => {
+                    currentFilter = btn.dataset.filter;
+                    currentPage = 1;
+                    document.querySelectorAll('.project-filter-btn').forEach((b) => b.classList.toggle('is-active', b === btn));
+                    fadeSwapTable(renderProjectTable);
+                });
+            });
+        }
 
         renderProjectTable();
         initProjectFilters();
-        
+
     </script>
 
     <script>
-    const contactForm = document.getElementById("contactForm");
-    const submitBtn = document.getElementById("contactSubmitBtn");
-    const submitLabel = document.getElementById("contactSubmitLabel");
-    const statusEl = document.getElementById("contactFormStatus");
+        const contactForm = document.getElementById("contactForm");
+        const submitBtn = document.getElementById("contactSubmitBtn");
+        const submitLabel = document.getElementById("contactSubmitLabel");
+        const statusEl = document.getElementById("contactFormStatus");
 
-    contactForm.addEventListener("submit", async (e) => {
-        e.preventDefault();
-        submitBtn.disabled = true;
-        submitLabel.textContent = "Sending...";
-        statusEl.classList.add("hidden");
-        statusEl.classList.remove("status-ok", "status-error");
+        contactForm.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            submitBtn.disabled = true;
+            submitLabel.textContent = "Sending...";
+            statusEl.classList.add("hidden");
+            statusEl.classList.remove("status-ok", "status-error");
 
-        try {
-            const res = await fetch(contactForm.action, {
-                method: "POST",
-                headers: { Accept: "application/json" },
-                body: new FormData(contactForm),
-            });
-            const data = await res.json();
+            try {
+                const res = await fetch(contactForm.action, {
+                    method: "POST",
+                    headers: { Accept: "application/json" },
+                    body: new FormData(contactForm),
+                });
+                const data = await res.json();
 
-            statusEl.classList.remove("hidden");
-            if (data.success) {
-                statusEl.textContent = "Message sent — thanks, I'll reply soon.";
-                statusEl.classList.add("status-ok");
-                contactForm.reset();
-            } else {
-                statusEl.textContent = "Something went wrong. Please try again.";
+                statusEl.classList.remove("hidden");
+                if (data.success) {
+                    statusEl.textContent = "Message sent — thanks, I'll reply soon.";
+                    statusEl.classList.add("status-ok");
+                    contactForm.reset();
+                } else {
+                    statusEl.textContent = "Something went wrong. Please try again.";
+                    statusEl.classList.add("status-error");
+                }
+            } catch (err) {
+                statusEl.classList.remove("hidden");
+                statusEl.textContent = "Network error — please try again.";
                 statusEl.classList.add("status-error");
+            } finally {
+                submitBtn.disabled = false;
+                submitLabel.textContent = "Send Message";
             }
-        } catch (err) {
-            statusEl.classList.remove("hidden");
-            statusEl.textContent = "Network error — please try again.";
-            statusEl.classList.add("status-error");
-        } finally {
-            submitBtn.disabled = false;
-            submitLabel.textContent = "Send Message";
+        });
+
+        function fadeSwapTable(callback) {
+            const tbody = document.getElementById('projectTableBody');
+            tbody.classList.add('is-fading');
+            setTimeout(() => {
+                callback();
+                tbody.classList.remove('is-fading');
+            }, 180);
         }
-    });
-</script>
+    </script>
 </body>
 
 </html>
