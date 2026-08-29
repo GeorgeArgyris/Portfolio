@@ -1,0 +1,26 @@
+name: Update version.json
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  update-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Write version.json
+        run: |
+          echo "{\"version\": \"${GITHUB_REF_NAME}\", \"updated\": \"$(date -u +%Y-%m-%d)\"}" > version.json
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add version.json
+          git commit -m "chore: bump version to ${GITHUB_REF_NAME}" || echo "No changes to commit"
+          git push
