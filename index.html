@@ -16,39 +16,43 @@
 
 <body class="min-h-screen">
     <div id="introOverlay" class="intro-overlay" aria-hidden="true">
-    <svg id="introGraph" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid meet">
-        <!-- connecting lines: outer nodes -> box perimeter -->
-        <line class="intro-line" x1="120" y1="100" x2="310" y2="210" pathLength="100" style="animation-delay:0s"/>
-        <line class="intro-line" x1="680" y1="90"  x2="490" y2="210" pathLength="100" style="animation-delay:0.1s"/>
-        <line class="intro-line" x1="720" y1="250" x2="490" y2="250" pathLength="100" style="animation-delay:0.2s"/>
-        <line class="intro-line" x1="650" y1="380" x2="490" y2="290" pathLength="100" style="animation-delay:0.3s"/>
-        <line class="intro-line" x1="400" y1="440" x2="400" y2="290" pathLength="100" style="animation-delay:0.4s"/>
-        <line class="intro-line" x1="150" y1="400" x2="310" y2="290" pathLength="100" style="animation-delay:0.5s"/>
-        <line class="intro-line" x1="80"  y1="250" x2="310" y2="250" pathLength="100" style="animation-delay:0.6s"/>
-        <line class="intro-line" x1="400" y1="60"  x2="400" y2="210" pathLength="100" style="animation-delay:0.7s"/>
+        <svg id="introGraph" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid meet">
+            <!-- connecting lines: outer nodes -> box perimeter -->
+            <line class="intro-line" x1="120" y1="100" x2="310" y2="210" pathLength="100" style="animation-delay:0s" />
+            <line class="intro-line" x1="680" y1="90" x2="490" y2="210" pathLength="100" style="animation-delay:0.1s" />
+            <line class="intro-line" x1="720" y1="250" x2="490" y2="250" pathLength="100"
+                style="animation-delay:0.2s" />
+            <line class="intro-line" x1="650" y1="380" x2="490" y2="290" pathLength="100"
+                style="animation-delay:0.3s" />
+            <line class="intro-line" x1="400" y1="440" x2="400" y2="290" pathLength="100"
+                style="animation-delay:0.4s" />
+            <line class="intro-line" x1="150" y1="400" x2="310" y2="290" pathLength="100"
+                style="animation-delay:0.5s" />
+            <line class="intro-line" x1="80" y1="250" x2="310" y2="250" pathLength="100" style="animation-delay:0.6s" />
+            <line class="intro-line" x1="400" y1="60" x2="400" y2="210" pathLength="100" style="animation-delay:0.7s" />
 
-        <!-- outer source nodes -->
-        <circle class="intro-node" cx="120" cy="100" r="4.5" style="animation-delay:0.5s"/>
-        <circle class="intro-node" cx="680" cy="90"  r="4.5" style="animation-delay:0.6s"/>
-        <circle class="intro-node" cx="720" cy="250" r="4.5" style="animation-delay:0.7s"/>
-        <circle class="intro-node" cx="650" cy="380" r="4.5" style="animation-delay:0.8s"/>
-        <circle class="intro-node" cx="400" cy="440" r="4.5" style="animation-delay:0.9s"/>
-        <circle class="intro-node" cx="150" cy="400" r="4.5" style="animation-delay:1.0s"/>
-        <circle class="intro-node" cx="80"  cy="250" r="4.5" style="animation-delay:1.1s"/>
-        <circle class="intro-node" cx="400" cy="60"  r="4.5" style="animation-delay:1.2s"/>
+            <!-- outer source nodes -->
+            <circle class="intro-node" cx="120" cy="100" r="4.5" style="animation-delay:0.5s" />
+            <circle class="intro-node" cx="680" cy="90" r="4.5" style="animation-delay:0.6s" />
+            <circle class="intro-node" cx="720" cy="250" r="4.5" style="animation-delay:0.7s" />
+            <circle class="intro-node" cx="650" cy="380" r="4.5" style="animation-delay:0.8s" />
+            <circle class="intro-node" cx="400" cy="440" r="4.5" style="animation-delay:0.9s" />
+            <circle class="intro-node" cx="150" cy="400" r="4.5" style="animation-delay:1.0s" />
+            <circle class="intro-node" cx="80" cy="250" r="4.5" style="animation-delay:1.1s" />
+            <circle class="intro-node" cx="400" cy="60" r="4.5" style="animation-delay:1.2s" />
 
-        <!-- name box -->
-        <rect id="introBox" x="310" y="210" width="180" height="80" rx="2" pathLength="100"/>
+            <!-- name box -->
+            <rect id="introBox" x="310" y="210" width="180" height="80" rx="2" pathLength="100" />
 
-        <!-- blueprint corner brackets -->
-        <path class="intro-corner" d="M310,232 L310,210 L332,210" pathLength="100" style="animation-delay:1.5s"/>
-        <path class="intro-corner" d="M468,210 L490,210 L490,232" pathLength="100" style="animation-delay:1.6s"/>
-        <path class="intro-corner" d="M490,268 L490,290 L468,290" pathLength="100" style="animation-delay:1.7s"/>
-        <path class="intro-corner" d="M332,290 L310,290 L310,268" pathLength="100" style="animation-delay:1.8s"/>
+            <!-- blueprint corner brackets -->
+            <path class="intro-corner" d="M310,232 L310,210 L332,210" pathLength="100" style="animation-delay:1.5s" />
+            <path class="intro-corner" d="M468,210 L490,210 L490,232" pathLength="100" style="animation-delay:1.6s" />
+            <path class="intro-corner" d="M490,268 L490,290 L468,290" pathLength="100" style="animation-delay:1.7s" />
+            <path class="intro-corner" d="M332,290 L310,290 L310,268" pathLength="100" style="animation-delay:1.8s" />
 
-        <text id="introNameText" x="400" y="257" text-anchor="middle">George Argyris</text>
-    </svg>
-</div>
+            <text id="introNameText" x="400" y="257" text-anchor="middle">George Argyris</text>
+        </svg>
+    </div>
     <!-- NAV -->
     <header class="fixed top-0 left-0 right-0 z-50 border-b hairline backdrop-blur-md"
         style="background: color-mix(in srgb, var(--bg) 85%, transparent)">
@@ -403,7 +407,7 @@
                             </div>
                         </div>
 
-                        
+
                     </article>
                 </div>
             </div>
@@ -592,6 +596,7 @@
             class="max-w-6xl mx-auto px-6 md:px-10 py-10 flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-4 text-center sm:text-left">
             <p class="font-mono text-xs text-muted" style="margin-top: 10px;">
                 © <span id="footerYear"></span> George Argyris. All rights reserved.
+                <span class="version-tag" id="footerVersion" style="margin-left: 0.6rem; display: none;"></span>
             </p>
 
             <button id="backToTop" aria-label="Back to top" class="back-to-top-btn" style="margin-bottom: 10px;">
@@ -617,23 +622,23 @@
     </script>
 
     <script>
-    document.body.classList.add('intro-active');
+        document.body.classList.add('intro-active');
 
-    const introOverlay = document.getElementById('introOverlay');
-    const reduceMotion1 = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const introOverlay = document.getElementById('introOverlay');
+        const reduceMotion1 = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    function endIntro() {
-        introOverlay.classList.add('is-hidden');
-        document.body.classList.remove('intro-active');
-        setTimeout(() => introOverlay.remove(), 650);
-    }
+        function endIntro() {
+            introOverlay.classList.add('is-hidden');
+            document.body.classList.remove('intro-active');
+            setTimeout(() => introOverlay.remove(), 650);
+        }
 
-    if (reduceMotion1) {
-    endIntro();
-} else {
-    setTimeout(endIntro, 2700);
-}
-</script>
+        if (reduceMotion1) {
+            endIntro();
+        } else {
+            setTimeout(endIntro, 3300);
+        }
+    </script>
 
 
     <script>
@@ -989,7 +994,20 @@
         }
     </script>
 
-    
+    <script>
+        fetch("version.json?_=" + Date.now())
+    .then((r) => (r.ok ? r.json() : null))
+    .then((data) => {
+        if (data && data.version) {
+            const el = document.getElementById("footerVersion");
+            el.textContent = data.version;
+            el.style.display = "inline-flex";
+        }
+    })
+    .catch(() => {});
+    </script>
+
+
 </body>
 
 </html>

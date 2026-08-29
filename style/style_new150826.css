@@ -1469,7 +1469,7 @@ body.intro-active {
 #introNameText {
     font-family: "Source Serif 4", serif;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 20px;
     fill: var(--text);
     opacity: 0;
     transform-box: fill-box;
